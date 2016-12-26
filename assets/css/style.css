@@ -1,0 +1,387 @@
+* {
+		-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+	font-family: 'OpenSans';
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold.ttf')  format('truetype'), url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans.woff') format('woff'), url('../fonts/OpenSans.ttf')  format('truetype'), url('../fonts/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+	width: 100%;
+	max-width: 1050px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.head-row-first {
+	background-image: url(../img/back.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	padding: 40px;
+}
+
+.page-title {
+	font-family: 'OpenSans-Bold';
+	text-transform: uppercase;
+	font-size: 40px;
+	color: #fafafa;
+}
+
+.head-row-second {
+	background: #E65100;
+}
+
+.head-row-second.fixed {
+	position: fixed;
+	top: 0;
+	width: 1050px;
+	max-width: 100%;
+	z-index: 999;
+}
+
+.main-menu {
+	margin: 0;
+	padding: 0;
+}
+
+.main-menu li {
+	display: inline-block;
+}
+
+.main-menu li a {
+	display: inline-block;
+	color: #fafafa;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 15px 30px;
+}
+
+.hover {
+	background: #FFA726;
+}
+
+.image-slider .image-slide {
+	height: 250px;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.image-slider {
+	overflow: hidden;
+}
+
+.image-slide .gray-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(100, 100, 100, .7);
+	transition: all .5s ease-in-out;
+}
+
+.image-slide.slick-active .gray-mask {
+	display: none;
+}
+
+.image-slide.slick-changing .gray-mask {
+	display: none!important;
+}
+
+.image-slider .slick-prev, .image-slider .slick-next {
+	z-index: 999;
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+	    -ms-transition: all .4s ease-in-out;
+	     -o-transition: all .4s ease-in-out;
+	        transition: all .4s ease-in-out;
+}
+
+.image-slider:hover .slick-prev {
+	left: 25px;
+}
+
+.image-slider:hover .slick-next {
+	right: 25px;
+}
+
+.tabs-navigation {
+	background: #FF5722;
+}
+
+.tabs-navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
+.tabs-navigation li {
+	display: inline-block;
+}
+
+.tabs-navigation li a {
+	display: inline-block;
+	color: #fafafa;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px 25px;
+	line-height: 25px;
+}
+
+.tabs-navigation ul li.active {
+	background: #FFAB91;
+}
+
+.tab-content {
+	padding: 10px;
+}
+
+.tabs-content{	
+	background: #FFAB91;
+}
+.tabs-content .tab-content{
+	display: none;
+	padding: 10px;
+}
+.tabs-content .tab-content.active{
+	display: block;
+}
+.tabs-prev, .tabs-next{
+	background: #FFAB91;
+	color: #fff;
+	border: none;
+	margin: 5px;
+	padding: 5px 10px;
+	font-family: 'OpenSans-Bold';
+	cursor: pointer;
+}
+
+.tabs-navigation li.avtive a, .tabs-navigation li a:hover {
+	background: #FFAB91;
+}
+
+.tabs-navigation li a:hover {
+	background: #FFAB91;
+}
+
+.tabs-prev, .tabs-next {
+	width: 100px;
+	height: 30px;
+	background: #FFAB91;
+	border: none;
+	outline: 0;
+	cursor: pointer;
+}
+
+.masonry-sizer, .masonry {
+	width: 33%;
+}
+
+.masonry-gutter {
+	width: .33%;
+}
+
+.masonry {
+	margin-bottom: .4%;
+}
+
+.masonry-width {
+	width: 66%;
+}
+
+footer .container {
+	background: #BF360C;
+	padding: 30px 0;
+}
+
+.footer-menu {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-menu li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.footer-menu li a {
+	font-family: 'OpenSans-Bold';
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #fafafa;
+}
+
+button.slick-prev.slick-arrow::before {
+	color: red;
+}
+
+button.slick-next.slick-arrow::before {
+	color: #FF5722;
+}
+
+.modal {
+	position: fixed;
+	background: rgba(0, 0, 0, .8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal .modal-content {
+	width: 400px;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 30px;
+	background: rgba(255, 255, 255, .87);
+	
+}
+
+.modal {
+	display: none;
+}
+
+.close-modal {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'OpenSans-Bold';
+}
+
+.input {
+	width: 100%;
+	height: 20px;
+	margin-bottom: 10px;
+}
+
+.date-input {
+	z-index: 9999;
+}
+
+.textarea {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+.button {
+	width: 100%;
+	height: 50px;
+	background: #234928;
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	margin-bottom: 30px;
+	color: #fff;
+	font-family: 'OpenSans';
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+#map {
+	height: 500px;
+}
+
+.map-title {
+	background: #E65100;
+	cursor: pointer;
+}
+
+.map-title h3 {
+	font-family: 'OpenSans-Bold';
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.location-form {
+	display: none;
+}
+
+.location-form form {
+	margin: 0 auto;
+	width: 500px;
+	text-align: center;
+}
+
+.location-form form select {
+	display: inline-block;
+	width: 100%;
+}
+
+.location-form form label {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+
+.location-form form input {
+	display: inline-block;
+	width: 100%;
+}
+
+.location-form form button {
+	width: 150px;
+	height: 40px;
+	background: #E65100;
+	color: #fff;
+	font-family: 'OpenSans-Bold';
+	border: none;
+	outline: 0;
+	cursor: pointer;
+}
+
+.location-form select, .location-form input {
+	width: 100%;
+	height: 30px;
+}
+
+.map-form-filled.error {
+	background: #B71C1C;
+	color: #fff;
+	padding: 5px;
+}
+
+.location-form label {
+	font-family: 'OpenSans-Bold';
+}
